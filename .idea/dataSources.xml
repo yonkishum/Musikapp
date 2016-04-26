@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="238555688">
+    <data-source source="LOCAL" name="PostgreSQL - musikapp@localhost" uuid="d82d7e06-2740-416f-bfb8-6c1fae6248d1">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/musikapp</jdbc-url>
+    </data-source>
+  </component>
+</project>

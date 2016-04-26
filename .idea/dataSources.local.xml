@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - musikapp@localhost" uuid="d82d7e06-2740-416f-bfb8-6c1fae6248d1">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>musikapp.pg_catalog musikapp.public</schema-pattern>
+      <default-schemas>musikapp.public</default-schemas>
+    </data-source>
+  </component>
+</project>

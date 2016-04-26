@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+
+  <h1 class="center-align">Listing Tracks</h1>
+
+  <div class="row">
+    <div class="col s8">
+      <table class="highlight">
+        <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Album</th>
+          <th>Artista</th>
+          <th colspan="3" class="center-align">Acciones</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @tracks.each do |track| %>
+            <tr>
+              <td><%= track.title %></td>
+              <td><%= track.album %></td>
+              <td><%= track.artist %></td>
+              <td><a class="waves-effect waves-light btn white-text green" <%= link_to 'Mostrar Información', track %></a></td>
+              <td><a class="waves-effect waves-light btn white-text blue" <%= link_to 'Editar Música', edit_track_path(track) %></a></td>
+              <td><a class="waves-effect waves-light btn white-text red" <%= link_to 'Eliminar Música', track, method: :delete, data: { confirm: '¿Estás seguro de Eliminar esta pista?' } %></a></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+      <a class="waves-effect waves-light btn white-text" <%= link_to 'Añadir nueva Canción', new_track_path %></a>
+    </div>
+
+    <div class="col s4">
+
+      <h3>Nuevas Pistas</h3>
+
+      <ul class="collection">
+        <% @tracks.each do |track| %>
+
+            <li><a class="collection-item" <%= link_to track.title, track %></a></li>
+
+        <% end %>
+      </ul>
+
+      <h3>Nuevos Albums</h3>
+
+      <ul class="collection">
+        <% @tracks.each do |track| %>
+
+            <li><a class="collection-item" <%= link_to track.album, track %></a></li>
+
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

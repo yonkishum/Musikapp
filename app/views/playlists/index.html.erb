@@ -1,0 +1,37 @@
+<div class="container">
+
+  <h1 class="center-align">Todas las Listas de Reproducción</h1>
+
+  <div class="row">
+    <table class="bordered highlight">
+      <thead>
+      <tr>
+        <th data-field="id">Name</th>
+        <th data-field="name" class="center-align">Numeros de Votos</th>
+        <th class="center-align"> Acciones</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @playlists.each do |playlist| %>
+          <tr>
+            <td><%= playlist.name %></td>
+            <td class="center-align"><%= playlist.number_of_votes %></td>
+            <td>
+              <a class="btn blue waves-effect col s4 m4 l4" role="button">Me Gusta</a>
+              <a class="btn green waves-effect col s4 m4 l4" role="button">Modificar</a>
+              <a class="btn red waves-effect col s4 m4 l4" role="button">Eliminar</a>
+            </td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+
+  <div>
+    <a class="waves-effect waves-light btn white-text" <%= link_to 'Añadir nueva Lista de Reproducción', new_playlist_path %></a>
+  </div>
+
+</div>

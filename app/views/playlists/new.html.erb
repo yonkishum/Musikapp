@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <h2>Crea tu nueva Lista de Reproducción!</h2>
+
+  <%= form_for(@playlist) do |f| %>
+
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :number_of_votes %>
+      <%= f.text_field :number_of_votes %>
+
+      <%= f.submit class: "btn" %>
+
+  <% end %>
+
+</div>

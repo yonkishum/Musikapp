@@ -5,7 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore Idea Idle RubyMine
-/.idea
+/idea
 
 # Ignore bundler config.
 /.bundle

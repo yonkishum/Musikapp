@@ -2,7 +2,7 @@ class TracksController < ApplicationController
   before_action :set_track, only: [:show, :edit, :update, :destroy]
 
   def api1
-    @tracks = Track.order(artist: :desc)
+    @tracks = Track.order(id: :desc)
 
     render :json => @tracks
   end

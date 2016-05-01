@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 20160325163442) do
   enable_extension "plpgsql"
 
   create_table "playlists", force: :cascade do |t|
-    t.string  "name"
-    t.integer "number_of_votes"
+    t.string   "name"
+    t.integer  "number_of_votes"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "tracks", force: :cascade do |t|

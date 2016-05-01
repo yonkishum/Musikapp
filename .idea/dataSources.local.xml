@@ -8,14 +8,16 @@
       <default-schemas>musikapp.public</default-schemas>
     </data-source>
     <data-source name="Rails musikapp: test" uuid="1fd570de-121c-4fb4-aacd-aa15953ea1ae">
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
       <user-password>df98df9bdf98df9bdf9ddf9bdf98df9b</user-password>
+      <schema-pattern>musikapp_test.pg_catalog musikapp_test.public</schema-pattern>
+      <default-schemas>musikapp_test.public</default-schemas>
     </data-source>
     <data-source name="Rails musikapp: development" uuid="4d41fe6a-4d10-4fd7-b65a-b41207e2436e">
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
       <user-password>df98df9bdf98df9bdf9ddf9bdf98df9b</user-password>
+      <schema-pattern>musikapp_development.pg_catalog musikapp_development.public</schema-pattern>
+      <default-schemas>musikapp_development.public</default-schemas>
     </data-source>
     <data-source name="Rails musikapp: production" uuid="1ce24874-8785-4ac0-a84d-b5f7e0b16273">
       <first-sync>true</first-sync>

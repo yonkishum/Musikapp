@@ -23,14 +23,15 @@
               <td><%= track.title %></td>
               <td><%= track.album %></td>
               <td><%= track.artist %></td>
-              <td><a class="waves-effect waves-light btn white-text green" <%= link_to 'Mostrar Información', track %></a></td>
+              <td>
+                <a class="waves-effect waves-light btn white-text green" <%= link_to '<i class="material-icons">search</i> Mostrar Información'.html_safe, track %></a></td>
               <td><a class="waves-effect waves-light btn white-text blue" <%= link_to 'Editar Música', edit_track_path(track) %></a></td>
               <td><a class="waves-effect waves-light btn white-text red" <%= link_to 'Eliminar Música', track, method: :delete, data: { confirm: '¿Estás seguro de Eliminar esta pista?' } %></a></td>
             </tr>
         <% end %>
         </tbody>
       </table>
-      <a class="waves-effect waves-light btn white-text" <%= link_to 'Añadir nueva Canción', new_track_path %></a>
+      <a class="waves-effect waves-light btn white-text" <%= link_to '<i class="material-icons">add</i> Añadir nueva Canción'.html_safe, new_track_path %></a>
     </div>
 
     <div class="col s4">

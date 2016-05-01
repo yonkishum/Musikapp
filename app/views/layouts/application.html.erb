@@ -4,6 +4,7 @@
   <title>Musikapp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,7 +13,14 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Musikapp</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><%= link_to 'Músicas', tracks_path %></li>
+        <li><%= link_to 'Listas de Reproducción', playlists_path %></li>
+        <li><%= link_to 'API', api1_path %></li>
+      </ul>
+
+      <ul id="mobile-demo" class="side-nav">
         <li><%= link_to 'Músicas', tracks_path %></li>
         <li><%= link_to 'Listas de Reproducción', playlists_path %></li>
         <li><%= link_to 'API', api1_path %></li>

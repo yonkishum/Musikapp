@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   #Aquí iran las rutas staticas de la pagina
 
+  get '/', to: 'static#index'
+
   get '/about', to: 'static#about'
 
 end

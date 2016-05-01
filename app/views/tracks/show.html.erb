@@ -2,20 +2,34 @@
 
   <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Titulo de la Canción:</strong>
-    <%= @track.title %>
-  </p>
+  <div class="row">
 
-  <p>
-    <strong>Album:</strong>
-    <%= @track.album %>
-  </p>
+    <div class="col l6 m6 s12">
+      <p>
+        <strong>Titulo de la Canción:</strong>
+        <%= @track.title %>
+      </p>
 
-  <p>
-    <strong>Artista:</strong>
-    <%= @track.artist %>
-  </p>
+      <p>
+        <strong>Album:</strong>
+        <%= @track.album %>
+      </p>
+
+      <p>
+        <strong>Artista:</strong>
+        <%= @track.artist %>
+      </p>
+    </div>
+
+    <div class="col l6 m6 s12">
+      <div class="row">
+        <div class="col l12 m12 s12">
+          <img class="responsive-img materialboxed" src="<%= @track.image %>" height="350px" width="350px">
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <a class="waves-effect waves-light btn white-text blue" <%= link_to 'Editar Música', edit_track_path(@track) %></a>
   <a class="waves-effect waves-light btn red white-text" <%= link_to 'Regresar', tracks_path %></a>
